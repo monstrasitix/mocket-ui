@@ -1,10 +1,9 @@
 // Neuclides
-@forward './nuclide/font' as font-*;
-@forward './nuclide/color' as color-*;
-@forward './nuclide/z-index' as z-index-*;
-@forward './nuclide/spacing' as spacing-*;
-@forward './nuclide/transition' as transition-*;
+@forward './nuclide';
+@forward './nuclide/animation' as animation-*;
 
 // Atoms
 @forward './atom/button' as button-*;
 @forward './atom/input' as input-*;
+@forward './atom/image' as image-*;
+@forward './atom/progress' as progress-*;

@@ -1,0 +1,10 @@
+@use '../context';
+
+
+.progress {
+    @include context.progress-base;
+    
+    &.-page {
+        @include context.progress-page;
+    }
+}
