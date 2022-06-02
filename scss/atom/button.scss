@@ -1,0 +1,34 @@
+@use '../context';
+
+
+/**
+ * @atom Button
+ * @section Navigation > Buttons
+ * @description
+ *  Buttons for various purposes.
+ * @modifiers
+ *  .-primary Primary button
+ *  .-secondary Secondary button
+ *  .-disabled Disabled
+ * @markup
+ *   <button class="button -primary">Primary</button>
+ *   <button class="button -secondary">Secondary</button>
+ *   <button disabled class="button -primary">Primary</button>
+ *   <button disabled class="button -secondary">Secondary</button>
+ */
+.button {
+    @include context.button-base;
+
+    &.-primary {
+        @include context.button-primary;
+    }
+
+    &.-secondary {
+        @include context.button-secondary;
+    }
+
+    &.-disabled,
+    &:disabled {
+        @include context.button-disabled;
+    }
+}

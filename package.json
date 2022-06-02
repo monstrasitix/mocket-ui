@@ -1,0 +1,15 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs": "nucleus",
+    "clear": "rm -rf ./css",
+    "start": "npm run clear && sass scss:css --watch"
+  },
+  "devDependencies": {
+    "nucleus-styleguide": "^1.1.1",
+    "sass": "^1.52.1"
+  }
+}

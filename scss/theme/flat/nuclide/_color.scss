@@ -1,0 +1,24 @@
+/** @color Transparent */
+$none: transparent;
+
+/** @color Primary */
+$primary: dodgerblue !default;
+$primary-hover: darken($primary, 5) !default;
+$primary-active: darken($primary, 10) !default;
+
+/** @color Primary text */
+$on-primary: white !default;
+
+/** @color Secondary */
+$secondary: gray !default;
+$secondary-hover: darken($secondary, 5) !default;
+$secondary-active: darken($secondary, 10) !default;
+
+/** @color Secondary text */
+$on-secondary: white !default;
+
+/** @color Disabled */
+$disabled: darkgray !default;
+
+/** @color Disabled text */
+$on-disabled: lightgray !default;

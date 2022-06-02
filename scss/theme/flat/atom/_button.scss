@@ -1,0 +1,89 @@
+@use '../nuclide' as *;
+
+
+@mixin base {
+    @include transition-hover(
+        background-color,
+        box-shadow,
+    );
+
+    font: {
+        size: $font-control-size;
+        family: $font-control-family;
+    };
+
+    border: {
+        width: 0;
+        radius: 0.25rem;
+    };
+
+    text: {
+        align: center;
+        decoration: none;
+    };
+
+    outline: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+
+    padding: $spacing-control-padding;
+    line-height: $font-control-height;
+}
+
+
+@mixin primary {
+    color: $color-on-primary;
+    background-color: $color-primary;
+    
+    &:hover {
+        background-color: $color-primary-hover;
+    }
+
+    &:active {
+        background-color: $color-primary-active;
+    }
+    
+    &:focus {
+        z-index: $z-index-focus;
+        box-shadow: (
+            0 0 0 1px $color-on-primary,
+            0 0 1px 2px $color-primary,
+        );
+    }
+}
+
+
+@mixin secondary {
+    color: $color-on-secondary;
+    background-color: $color-secondary;
+    
+    &:hover {
+        background-color: $color-secondary-hover;
+    }
+
+    &:active {
+        background-color: $color-secondary-active;
+    }
+
+    &:focus {
+        z-index: $z-index-focus;
+        box-shadow: (
+            0 0 0 1px $color-on-secondary,
+            0 0 1px 2px $color-secondary,
+        );
+    }
+}
+
+
+@mixin disabled {
+    cursor: not-allowed;
+
+    &:hover,
+    &:active,
+    & {
+        color: $color-on-disabled;
+        background-color: $color-disabled;
+    }
+}

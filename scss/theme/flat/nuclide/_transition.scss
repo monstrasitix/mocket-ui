@@ -1,0 +1,12 @@
+/**
+ * Transition on ease hover
+ * @mixin Hover
+ * @section Transition
+ */
+@mixin hover($property...) {
+    transition: {
+        duration: 0.1s;
+        timing-function: ease;
+        property: $property;
+    };
+}

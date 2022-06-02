@@ -1,0 +1,36 @@
+/**
+ * @nuclide Font size
+ * @section Typography
+ */
+$size: 16px !default;
+
+/**
+ * @nuclide Line height
+ * @section Typography
+ */
+$height: 1.2 !default;
+
+/**
+ * @nuclide Font family
+ * @section Typography
+ */
+$family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !default;
+
+/**
+ * Base font siz
+ * @nuclide Control font size
+ * @section Typography > Control
+ */
+$control-size: 0.9em !default;
+
+/**
+ * @nuclide Control font family
+ * @section Typography > Control
+ */
+$control-family: $family !default;
+
+/**
+ * @nuclide Control line height
+ * @section Typography > Control
+ */
+$control-height: inherit !default;
