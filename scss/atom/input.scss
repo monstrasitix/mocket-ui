@@ -1,6 +1,19 @@
 @use '../context';
 
 
+/**
+ * @atom Input
+ * @section Navigation > Input
+ * @description
+ *  INput for various purposes.
+ * @modifiers
+ *  :read-only Read only
+ *  :disabled Disabled state
+ * @markup
+ *   <input value="Type your name" type="text" class="input" /><br />
+ *   <input value="Type your name" type="text" disabled class="input" /><br />
+ *   <input value="Type your name" type="text" readonly class="input" /><br />
+ */
 .input {
     @include context.input-base;
     

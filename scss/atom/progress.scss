@@ -1,6 +1,26 @@
 @use '../context';
 
 
+/**
+ * @atom Progress
+ * @section Navigation > Progress
+ * @description
+ *  Progress for various purposes.
+ * @modifiers
+ *  .-page Top of parent
+ * @markup
+ *  <progress class="progress" max="100" value="60">%</progress>
+ *  <br />
+ *  <progress class="progress" max="100">%</progress>
+ *  <br />
+ *  <div style="position: relative;">
+ *      <progress class="progress -page" max="100" value="60">%</progress>
+ *  </div>
+ *  <br />
+ *  <div style="position: relative;">
+ *      <progress class="progress -page" max="100">%</progress>
+ *  </div>
+ */
 .progress {
     @include context.progress-base;
     

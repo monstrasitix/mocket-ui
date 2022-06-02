@@ -1,5 +1,6 @@
+@forward './z-index' as z-index-*;
 @forward './font' as font-*;
 @forward './color' as color-*;
 @forward './spacing' as spacing-*;
 @forward './transition' as transition-*;
-@forward './z-index' as z-index-*;
+@forward './border' as border-*;
