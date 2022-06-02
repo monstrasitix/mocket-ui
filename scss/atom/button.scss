@@ -9,6 +9,7 @@
  * @modifiers
  *  .-primary Primary button
  *  .-secondary Secondary button
+ *  .-loading Loading state
  *  .-disabled Disabled
  * @markup
  *   <button class="button -primary">Primary</button>
@@ -25,6 +26,10 @@
 
     &.-secondary {
         @include context.button-secondary;
+    }
+
+    &.-loading {
+        @include context.button-loading;
     }
 
     &.-disabled,

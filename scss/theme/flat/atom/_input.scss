@@ -1,0 +1,61 @@
+@use '../nuclide'as *;
+
+
+@mixin base {
+    @include transition-hover(box-shadow,
+    );
+
+    font: {
+        size: $font-control-size;
+        family: $font-control-family;
+    }
+
+    ;
+
+    border: {
+        width: 1px;
+        radius: 0.25rem;
+        color: $color-border;
+        style: solid;
+    }
+
+    ;
+
+
+    outline: none;
+    display: block;
+    white-space: nowrap;
+
+    padding: $spacing-control-padding;
+    line-height: $font-control-height;
+    background-color: $color-white;
+
+    &:focus {
+        z-index: $z-index-focus;
+        box-shadow: (0 0 0 1px $color-on-primary,
+                0 0 1px 2px $color-primary,
+            );
+    }
+}
+
+
+@mixin disabled {
+    cursor: not-allowed;
+
+    &:hover,
+    &:active,
+    & {
+        color: $color-on-disabled;
+        background-color: $color-disabled;
+    }
+}
+
+
+@mixin read-only {
+    border-width: 0;
+    background-color: $color-none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

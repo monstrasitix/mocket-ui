@@ -1,0 +1,14 @@
+@use '../context';
+
+
+.input {
+    @include context.input-base;
+    
+    &:read-only {
+        @include context.input-read-only;
+    }
+
+    &:disabled {
+        @include context.input-disabled;
+    }
+}

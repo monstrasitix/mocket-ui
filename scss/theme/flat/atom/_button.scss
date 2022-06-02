@@ -87,3 +87,38 @@
         background-color: $color-disabled;
     }
 }
+
+
+
+@mixin loading {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+
+    &::after {
+        animation: animrotate .5s infinite linear;
+
+        $size: 1em;
+        width: $size;
+        height: $size;
+        
+        $position: calc(50% - #{$size  * .5});
+        top: $position;
+        left: $position;
+
+        content: '';
+        display: block;
+        position: absolute;
+
+        border: {
+            width: 2px;
+            style: solid;
+            radius: $size;
+            color: $color-border;
+            top-color: $color-none;
+            right-color: $color-none;
+        }
+
+        
+    }
+}

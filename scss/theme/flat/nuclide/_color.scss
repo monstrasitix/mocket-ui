@@ -1,6 +1,12 @@
 /** @color Transparent */
 $none: transparent;
 
+/** @color White */
+$white: #fff;
+
+/** @color Border */
+$border: #ddd !default;
+
 /** @color Primary */
 $primary: dodgerblue !default;
 $primary-hover: darken($primary, 5) !default;
@@ -18,7 +24,7 @@ $secondary-active: darken($secondary, 10) !default;
 $on-secondary: white !default;
 
 /** @color Disabled */
-$disabled: darkgray !default;
+$disabled: #dedede !default;
 
 /** @color Disabled text */
-$on-disabled: lightgray !default;
+$on-disabled: darkgray !default;
