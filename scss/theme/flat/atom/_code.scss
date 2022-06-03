@@ -1,0 +1,7 @@
+@use '../nuclide' as *;
+
+
+@mixin base {
+    color: $color-code;
+    padding: 0 0.5rem;
+}

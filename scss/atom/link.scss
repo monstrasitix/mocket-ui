@@ -1,0 +1,19 @@
+@use '../context';
+
+/**
+ * @atom Link
+ * @section Navigation > Link
+ * @modifiers
+ *  :hover Dark
+ *  :active Darker
+ *  :visited Lighter
+ * @markup
+ *   <a href="#" class="link">This is a sample</a>
+ *   <br />
+ *   <br />
+ *   <a href="#" class="button -primary">This is a sample</a>
+ *   <a href="#" class="button -secondary">This is a sample</a>
+ */
+.link {
+    @include context.link-base;
+}

@@ -1,0 +1,6 @@
+@use '../context';
+
+
+.paragraph {
+    @include context.paragraph-base;
+}

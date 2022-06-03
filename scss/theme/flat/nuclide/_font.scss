@@ -34,3 +34,18 @@ $control-family: $family !default;
  * @section Typography > Control
  */
 $control-height: inherit !default;
+
+
+/**
+ * @nuclide Address height
+ * @section Typography
+ */
+ $address-height: 1.5 !default;
+
+ /**
+ * @nuclide PAragraph height
+ * @section Typography
+ */
+ $paragraph-height: 1.6 !default;
+ $paragraph-align: left !default;
+ $paragraph-indent: 1rem !default;

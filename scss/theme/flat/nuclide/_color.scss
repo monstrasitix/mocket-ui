@@ -28,3 +28,10 @@ $disabled: #dedede !default;
 
 /** @color Disabled text */
 $on-disabled: darkgray !default;
+
+$link: $primary;
+$link-hover: darken($primary, 10);
+$link-active: darken($primary, 20);
+$link-visited: lighten($primary, 10);
+
+$code: crimson !default;

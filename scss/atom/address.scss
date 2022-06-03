@@ -1,0 +1,19 @@
+@use '../context';
+
+/**
+ * @atom Address
+ * @section Navigation > Address
+ * @markup
+ *   <address class="address">
+ *      3 Sycamore Cres<br />
+ *      Merrion<br />
+ *      Blackrock<br />
+ *      Co. Dublin<br />
+ *      A94 F8Y2<br />
+ *   </address>
+ */
+.address {
+    @include context.address-base;
+}
+
+

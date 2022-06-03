@@ -4,5 +4,9 @@
 // Atoms
 @use './atom/button';
 @use './atom/input';
+@use './atom/code';
 @use './atom/image';
 @use './atom/progress';
+@use './atom/paragraph';
+@use './atom/link';
+@use './atom/address';

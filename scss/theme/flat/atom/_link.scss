@@ -1,0 +1,20 @@
+@use '../nuclide' as *;
+
+
+@mixin base {
+    text-decoration: none;
+    color: $color-link;
+    font-family: $font-family;
+    
+    &:hover {
+        color: $color-link-hover;
+    }
+
+    &:visited {
+        color: $color-link-visited;
+    }
+
+    &:active {
+        color: $color-link-active;
+    }
+}

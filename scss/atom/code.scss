@@ -1,0 +1,23 @@
+@use '../context';
+
+/**
+ * @atom Code
+ * @section Navigation > Code
+ * @markup
+ *   <code class="code">npm run start</code>
+ *   <br />
+ *   <br />
+ *   <p class="paragraph">
+ *      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+ *      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+ *      when an <code class="code">unknown printer took a galley</code> of type and scrambled it to make a type
+ *      specimen book. It has survived not only five centuries, but also the leap into
+ *      electronic typesetting, remaining essentially unchanged. It was popularised
+ *      in the 1960s with the <code class="code">release of Letraset sheets containing</code> Lorem Ipsum passages,
+ *      and more recently with desktop publishing software like Aldus
+ *      PageMaker including versions of Lorem Ipsum.
+ *   <p>
+ */
+.code {
+    @include context.code-base;
+}

@@ -1,0 +1,9 @@
+@use '../nuclide' as *;
+
+
+@mixin base {
+    text-align: $font-paragraph-align;
+    text-indent: $font-paragraph-indent;
+    line-height: $font-paragraph-height;
+    word-spacing: 1px;
+}
