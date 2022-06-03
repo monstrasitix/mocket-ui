@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "docs": "nucleus",
+    "docs.open": "start ./styleguide/index.html",
     "clear": "rm -rf ./css",
     "start": "npm run clear && sass scss:css --watch"
   },

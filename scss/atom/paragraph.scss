@@ -1,6 +1,14 @@
 @use '../context';
 
 
+/**
+ * @atom Paragraph
+ * @section Navigation > Typography
+ * @markup
+ *   <p class="paragraph">@{lipsum:1:paragraph}</p>
+ *   <p class="paragraph">@{lipsum:1:paragraph}</p>
+ *   <p class="paragraph">@{lipsum:1:paragraph}</p>
+ */
 .paragraph {
     @include context.paragraph-base;
 }
