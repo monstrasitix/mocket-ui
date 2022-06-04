@@ -10,3 +10,7 @@
 @use './atom/paragraph';
 @use './atom/link';
 @use './atom/address';
+
+// MOlecules
+@use './molecule/definition-list';
+@use './molecule/table';

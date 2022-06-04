@@ -1,0 +1,26 @@
+@use '../context';
+
+
+/**
+ * @molecule Definition List
+ * @markup
+ *   <dl class="definition">
+ *      <dt>Web</dt>
+ *      <dd>@{lipsum:1:paragraphs}</dd>
+ *      <dt>HTML</dt>
+ *      <dd>@{lipsum:1:paragraphs}</dd>
+ *      <dt>CSS</dt>
+ *      <dd>@{lipsum:1:paragraphs}</dd>
+ *   </dl>
+ */
+.definition {
+    @include context.definition-base;
+    
+    dt {
+        @include context.definition-title;
+    }
+
+    dd {
+        @include context.definition-data;
+    }
+}

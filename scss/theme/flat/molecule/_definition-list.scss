@@ -1,0 +1,14 @@
+@mixin base {
+    margin: 1rem 0;
+}
+
+@mixin title {
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+@mixin data {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding-left: 1em;
+}

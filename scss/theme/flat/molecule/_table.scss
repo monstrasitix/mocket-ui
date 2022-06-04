@@ -1,0 +1,57 @@
+@use '../nuclide' as *;
+
+@mixin base {
+    border-collapse: collapse;
+    width: 100%;
+    
+    &.-border {
+        border: 1px solid $color-border;
+
+        th, td {
+            border: 1px solid $color-border;
+        }
+    }
+    
+    &.-score {
+        thead {
+            border-bottom: 1px solid $color-border;
+        }
+
+        th, td {
+            text-align: center;
+        }
+
+        td,
+        thead th:not(:first-child) {
+            border-left: 1px solid $color-border;
+        }
+    }
+}
+
+@mixin cell {
+    padding: 0.6rem;
+}
+
+@mixin row {
+}
+
+@mixin data {
+    @include cell;
+}
+
+@mixin header {
+    @include cell;
+    text-align: center;
+}
+
+@mixin head {}
+
+@mixin body {}
+@mixin foot {}
+
+@mixin caption {
+    caption-side: bottom;
+    margin-top: 1rem;
+    font-style: italic;
+    text-align: right;
+}
