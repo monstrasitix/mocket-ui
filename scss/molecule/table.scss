@@ -4,7 +4,7 @@
 /**
  * @molecule Table
  * @markup
- *  <table class="table -border">
+ *  <table class="table -complex">
  *      <caption>Schedule</caption>
  *      <thead>
  *          <tr>
@@ -57,7 +57,7 @@
  *  </table>
  *  <br />
  *  <br />
- *  <table class="table -score">
+ *  <table class="table -simple">
  *      <caption>Schedule</caption>
  *      <thead>
  *          <tr>
@@ -116,31 +116,17 @@
  */
 .table {
     @include context.table-base;
+    
 
-    thead {
-        @include context.table-head;
-    }
-
-    tbody {
-        @include context.table-body;
-    }
-
-    tfoot {
-        @include context.table-foot;
+    &.-complex {
+        @include context.table-complex;
     }
     
-    tr {
-        @include context.table-row;
-    }
 
-    th {
-        @include context.table-header;
+    &.-simple {
+        @include context.table-simple;
     }
-
-    td {
-        @include context.table-data;
-    }
-
+    
     caption {
         @include context.table-caption;
     }

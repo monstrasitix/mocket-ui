@@ -3,51 +3,29 @@
 @mixin base {
     border-collapse: collapse;
     width: 100%;
-    
-    &.-border {
+}
+
+@mixin complex {
+    border: 1px solid $color-border;
+
+    th, td {
         border: 1px solid $color-border;
+        padding: 1rem;
+    }
+}
 
-        th, td {
-            border: 1px solid $color-border;
-        }
+
+@mixin simple {
+    tr {
+        border-top: 1px solid $color-border;
     }
     
-    &.-score {
-        thead {
-            border-bottom: 1px solid $color-border;
-        }
-
-        th, td {
-            text-align: center;
-        }
-
-        td,
-        thead th:not(:first-child) {
-            border-left: 1px solid $color-border;
-        }
+    th, td {
+        padding: 1rem;
+        text-align: left;
     }
 }
 
-@mixin cell {
-    padding: 0.6rem;
-}
-
-@mixin row {
-}
-
-@mixin data {
-    @include cell;
-}
-
-@mixin header {
-    @include cell;
-    text-align: center;
-}
-
-@mixin head {}
-
-@mixin body {}
-@mixin foot {}
 
 @mixin caption {
     caption-side: bottom;
