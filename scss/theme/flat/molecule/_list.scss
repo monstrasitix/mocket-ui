@@ -1,0 +1,13 @@
+@mixin base {}
+
+@mixin ordered {
+    list-style-type: decimal-leading-zero;
+}
+
+@mixin unordered {
+    list-style-type: circle;
+}
+
+@mixin item {
+    padding: 0.6rem;
+}

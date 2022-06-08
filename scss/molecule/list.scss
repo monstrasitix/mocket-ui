@@ -1,0 +1,32 @@
+@use '../context';
+
+
+/**
+ * @molecule List
+ * @markup
+ *   <ol class="list">
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *   </ol>
+ *   <ul class="list">
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *      <li>@{lipsum:paragraphs:1}</li>
+ *   </ul>
+ */
+.list {
+    @include context.list-base;
+    
+    @at-root ol#{&} {
+        @include context.list-ordered;
+    }
+
+    @at-root ul#{&} {
+        @include context.list-unordered;
+    }
+
+    li {
+        @include context.list-item;
+    }
+}

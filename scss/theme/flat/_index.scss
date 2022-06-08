@@ -16,4 +16,5 @@
 
 // Molecules
 @forward './molecule/table' as table-*;
+@forward './molecule/list' as list-*;
 @forward './molecule/definition-list' as definition-*;
